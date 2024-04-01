@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- This is my css reset -->
+    <link rel="stylesheet" href="css-reset.css">
+    <!-- This is my own stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/images/favicon-32x32.png" type="image/x-icon">
+    <title>Newsletter with sign up form</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Hero image -->
+        <div class="herobox__1">
+            <img src="assets/images/illustration-sign-up-mobile.svg" alt="" srcset="assets/images/illustration-sign-up-mobile.svg 770w, assets/images/illustration-sign-up-desktop.svg ">
+        </div>
+        <!-- Newsletter content -->
+        <div class="herobox__2">
+            <h1>Stay updated!</h1>
+            <p>Join 60,000+ product managers receiving monthly updates on:</p>
+            <div class="feauture__wrapper">
+                <div class="feature feature__1">
+                    <img src="assets/images/icon-list.svg" alt="">
+                    <p>Product discovery and building what matters</p>
+                </div>
+                <div class="feature feature__2">
+                    <img src="assets/images/icon-list.svg" alt="">
+                    <p>Measuring to ensure updates are a success</p>
+                </div>
+                <div class="feature feature__3">
+                    <img src="assets/images/icon-list.svg" alt="">
+                    <p>And much more!</p>
+                </div>
+            </div>
+
+            <form> 
+                <div class="label__wrapper">
+                    <label for="email">Email address</label>
+                    <p  class= "error__Mssg" >Valid email required</p>
+                </div>
+                <input type="email" name="email" id="email" placeholder="email@company.com">
+                <input type="submit" value="Subscribe to monthly newsletter">
+            </form>
+        </div>
+        
+    
+    </div>
+
+        <!-- Popup -->
+        <div class="popup__wrapper">
+            <div class="popup">
+                <img src="assets/images/icon-success.svg" alt="">
+                <h2>Thanks for subscribing!</h2>
+                <p class="confirmation__Mssg">A confirmation email has been sent to <span>ash@loremcompany.com</span>. Please open it and click the button inside to confirm your subscription</p>
+                <button>Dismiss Message</button>
+            </div>
+        </div>
+
+    <!-- My javascript -->
+    <script src="index.js"></script>
+</body>
+</html>
